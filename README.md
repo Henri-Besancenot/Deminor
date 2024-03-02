@@ -2,7 +2,7 @@
 Simple deminor game
 
 # How to use
-In order to use this project, you need to download it and simply run the `python main.py` command in your terminal when you're in the `~/Démineur/` folder.
+In order to use this project, you need to download it and simply run the `python main.py` or `python3 main.py` command in your terminal when you're in the `~/Démineur/` folder. Note that it is coded in `Python 3.11` so you need to have it on your computer.
 
 # Features
 - Right click to place flags
