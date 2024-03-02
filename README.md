@@ -1,0 +1,2 @@
+# Deminor
+Simple deminor game
