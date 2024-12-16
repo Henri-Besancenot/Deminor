@@ -93,14 +93,17 @@ class Grid:
         case.load_image(case.bombs)
 
         if case.bombs == 0:
-            if x > 0:
-                self.extend(x - 1, y, False)
-            if y > 0:
-                self.extend(x, y - 1, False)
-            if x < self.width - 1:
-                self.extend(x + 1, y, False)
-            if y < self.height - 1:
-                self.extend(x, y + 1, False)
+            # if x > 0:
+            #     self.extend(x - 1, y, False)
+            # if y > 0:
+            #     self.extend(x, y - 1, False)
+            # if x < self.width - 1:
+            #     self.extend(x + 1, y, False)
+            # if y < self.height - 1:
+            #     self.extend(x, y + 1, False)
+            for adj_case in self.getAdjacentCases(x, y):
+                i,j = adj_case.coord
+                self.extend(i, j, False)
 
     def reveal(self):
         for line in self.grid:

@@ -66,6 +66,8 @@ class Case(pg.sprite.Sprite):
         else:
             self.load_image(self.bombs)
 
+
+
     def update(self, event: pg.event) -> int:
         if event.type == pygame.MOUSEBUTTONUP:
             if self.rect.collidepoint(event.pos):

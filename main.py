@@ -8,7 +8,7 @@ nothing = 2
 
 if __name__ == "__main__":
     pg.init()
-    width, height, nbMines = 30, 30, 100
+    width, height, nbMines = 40, 40, 200
     # Title
     pg.display.set_caption("Minesweeper")
 
